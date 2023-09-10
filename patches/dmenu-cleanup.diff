@@ -1,11 +1,11 @@
---- dmenu-orig/Makefile	2023-09-09 16:56:16.722074905 +0100
-+++ dmenu-new/Makefile	2023-09-09 17:09:48.292077545 +0100
+--- a/Makefile	2023-09-09 16:56:16.722074905 +0100
++++ b/Makefile	2023-09-09 17:09:48.292077545 +0100
 @@ -29,7 +29,7 @@
  	$(CC) -o $@ stest.o $(LDFLAGS)
- 
+
  clean:
 -	rm -f dmenu stest $(OBJ) dmenu-$(VERSION).tar.gz
 +	rm -f dmenu stest $(OBJ) dmenu-$(VERSION).tar.gz config.h *.orig *.rej
- 
+
  dist: clean
  	mkdir -p dmenu-$(VERSION)
